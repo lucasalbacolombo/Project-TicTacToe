@@ -158,3 +158,26 @@ aside p {
 footer p {
 	margin-bottom: 80px;
 }
+
+@media only screen and (max-width: 1100px) {
+	#start-img {
+		width: 120%;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	start-img {
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 430px) {
+	.select-buttons {
+		width: 80px;
+	}
+}

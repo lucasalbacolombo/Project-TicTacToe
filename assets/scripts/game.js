@@ -1,6 +1,8 @@
 class Game {
 	startGame() {
 		const board = document.querySelector('.board');
+		const img = document.querySelector('#img-start');
+		img.style.display = 'none';
 		board.style.display = 'grid';
 	}
 

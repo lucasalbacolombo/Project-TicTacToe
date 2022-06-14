@@ -3,10 +3,11 @@ const startBtn = document.querySelector('#start-button');
 const resetBtn = document.querySelector('#reset-button');
 const cells = document.querySelectorAll('.cell');
 const message = document.querySelector('#results');
+const img = document.querySelector('#img-start');
 const x_class = 'x';
 const circle_class = 'circle';
 let circleTurn;
-const win_combinations = [
+const winCombinations = [
 	[0, 1, 2],
 	[3, 4, 5],
 	[6, 7, 8],
@@ -18,6 +19,10 @@ const win_combinations = [
 ];
 
 startBtn.addEventListener('click', () => {
+	game.startGame();
+});
+
+img.addEventListener('click', () => {
 	game.startGame();
 });
 
@@ -51,7 +56,7 @@ function switchTurns() {
 }
 
 function checkWin(currentClass) {
-	return win_combinations.some((combination) => {
+	return winCombinations.some((combination) => {
 		return combination.every((index) => {
 			return cells[index].classList.contains(currentClass);
 		});
