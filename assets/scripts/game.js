@@ -1,30 +1,28 @@
-class Board {
-	constructor(grid) {
-		this.grid = [
-			[new Cell(), new Cell(), new Cell()],
-			[new Cell(), new Cell(), new Cell()],
-			[new Cell(), new Cell(), new Cell()],
-		];
+class Game {
+	startGame() {
+		const board = document.querySelector('.board');
+		board.style.display = 'grid';
 	}
 
-	isBoardFull() {
-		let counter = 0;
-		for (let i = 0; i < this.grid.length; i++) {
-			const collumns = this.grid[i];
-			for (let j = 0; j < collumns.length; j++) {
-				if (collumns[j] !== '') {
-					counter += 1;
-				}
-			}
-		}
-		if (counter === 9) {
-			return true;
+	endGame(draw) {
+		if (draw) {
+			message.innerText = 'Draw!';
 		} else {
-			return false;
+			message.innerText = `${circleTurn ? "O's" : "X's"} Wins!`;
 		}
 	}
 
-	directions() {}
+	checkDraw() {
+		return [...cells].every((cell) => {
+			return (
+				cell.classList.contains(x_class) ||
+				cell.classList.contains(circle_class)
+			);
+		});
+	}
 
-	winner() {}
+	reset() {
+		location.reload();
+		return false;
+	}
 }
