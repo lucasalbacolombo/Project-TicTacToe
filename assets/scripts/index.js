@@ -37,28 +37,12 @@ cells.forEach((cell) => {
 function clickedCell(e) {
 	const cell = e.target;
 	const currentClass = circleTurn ? circle_class : x_class;
-	placeMark(cell, currentClass);
-	if (checkWin(currentClass)) {
+	game.placeMark(cell, currentClass);
+	if (game.checkWin(currentClass)) {
 		game.endGame(false);
 	} else if (game.checkDraw()) {
 		game.endGame(true);
 	} else {
-		switchTurns();
+		game.switchTurns();
 	}
-}
-
-function placeMark(cell, currentClass) {
-	cell.classList.add(currentClass);
-}
-
-function switchTurns() {
-	circleTurn = !circleTurn;
-}
-
-function checkWin(currentClass) {
-	return winCombinations.some((combination) => {
-		return combination.every((index) => {
-			return cells[index].classList.contains(currentClass);
-		});
-	});
 }

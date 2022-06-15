@@ -6,12 +6,25 @@ class Game {
 		board.style.display = 'grid';
 	}
 
+	placeMark(cell, currentClass) {
+		cell.classList.add(currentClass);
+	}
+
 	endGame(draw) {
+		const message = document.querySelector('#results');
 		if (draw) {
 			message.innerText = 'Draw!';
 		} else {
 			message.innerText = `${circleTurn ? "O's" : "X's"} Wins!`;
 		}
+	}
+
+	checkWin(currentClass) {
+		return winCombinations.some((combination) => {
+			return combination.every((index) => {
+				return cells[index].classList.contains(currentClass);
+			});
+		});
 	}
 
 	checkDraw() {
@@ -21,6 +34,10 @@ class Game {
 				cell.classList.contains(circle_class)
 			);
 		});
+	}
+
+	switchTurns() {
+		circleTurn = !circleTurn;
 	}
 
 	reset() {
