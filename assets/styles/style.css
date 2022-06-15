@@ -166,12 +166,15 @@ footer p {
 	.board {
 		display: grid;
 	}
+	#start-button {
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 700px) {
 	section {
 		display: flex;
-		flex-direction: column;
+		flex-direction: column-reverse;
 		align-items: center;
 	}
 	.select-buttons {
