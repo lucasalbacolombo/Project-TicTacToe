@@ -161,7 +161,10 @@ footer p {
 
 @media only screen and (max-width: 1100px) {
 	#start-img {
-		width: 120%;
+		display: none;
+	}
+	.board {
+		display: grid;
 	}
 }
 
@@ -171,13 +174,20 @@ footer p {
 		flex-direction: column;
 		align-items: center;
 	}
+	.select-buttons {
+		width: 200px;
+	}
+	aside {
+		width: 90%;
+	}
 	start-img {
 		width: 80%;
 	}
 }
 
 @media only screen and (max-width: 430px) {
-	.select-buttons {
-		width: 80px;
+	.cell {
+		width: 90px;
+		height: 90px;
 	}
 }
