@@ -5,7 +5,7 @@
 Deploy Link:
 [https://lucasalbacolombo.github.io/Project-TicTacToe/](https://lucasalbacolombo.github.io/Project-TicTacToe/)
 
-Presentation Link: [https://docs.google.com/presentation/d/1d5bxaCe7wwe81WQTQfi1X7gwThH0AxseIXzef5RaN3A/edit?usp=sharing]
+Presentation Link: https://docs.google.com/presentation/d/1d5bxaCe7wwe81WQTQfi1X7gwThH0AxseIXzef5RaN3A/edit?usp=sharing
 
 ### About the Project
 
@@ -23,7 +23,7 @@ An early variation of tic-tac-toe was played in the Roman Empire, around the fir
 Link do deploy:
 [https://lucasalbacolombo.github.io/Project-TicTacToe/](https://lucasalbacolombo.github.io/Project-TicTacToe/)
 
-Link da apresentação: [https://docs.google.com/presentation/d/1d5bxaCe7wwe81WQTQfi1X7gwThH0AxseIXzef5RaN3A/edit?usp=sharing]
+Link da apresentação: https://docs.google.com/presentation/d/1d5bxaCe7wwe81WQTQfi1X7gwThH0AxseIXzef5RaN3A/edit?usp=sharing
 
 ### Sobre o Projeto
 
